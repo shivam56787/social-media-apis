@@ -6,7 +6,7 @@ let userSchema = mongoose.Schema({
     required: "Enter ID",
   },
   userName: {
-    type: Number,
+    type: String,
     unique: true,
     required: "Enter username",
   },

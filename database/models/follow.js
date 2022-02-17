@@ -14,5 +14,5 @@ let followSchema = mongoose.Schema({
     default: true,
   },
 });
-mySchema.index({ followerId: 1, followingId: 1 }, { unique: true });
+followSchema.index({ followerId: 1, followingId: 1 }, { unique: true });
 module.exports = mongoose.model("follow", followSchema, "follow");
